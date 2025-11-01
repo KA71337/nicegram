@@ -1,0 +1,280 @@
+/* === Общие стили === */
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: radial-gradient(circle at center, #0a0a0a 0%, #000000 100%);
+    color: white;
+    overflow-x: hidden;
+}
+
+/* === Верхняя панель === */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 60px;
+}
+
+.header-right {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.logo img {
+    width: 136px;
+    height: 24px;
+}
+
+/* === Кнопка регистрации === */
+.register-btn {
+    background-color: white;
+    color: black;
+    border: none;
+    border-radius: 25px;
+    padding: 12px 45px;
+    font-weight: 600;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.register-btn:hover {
+    background-color: #e0e0e0;
+}
+
+/* === Переключатель языков === */
+.language-switcher {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.lang-btn {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    background: transparent;
+    border: 1px solid #555;
+    border-radius: 20px;
+    color: white;
+    font-weight: 500;
+    padding: 6px 12px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.lang-btn img {
+    width: 20px;
+    height: 14px;
+}
+
+.lang-btn:hover,
+.lang-btn.active {
+    background: white;
+    color: black;
+    border-color: white;
+}
+
+/* === Главный контент === */
+main {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    height: 70vh;
+    padding-left: 60px;
+    padding-top: 70px;
+}
+
+.content {
+    max-width: 700px;
+    transform: translateY(-20px);
+}
+
+h1 {
+    font-size: 3rem;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 1.1rem;
+    color: #ccc;
+    line-height: 1.6;
+}
+
+/* === WHY NICEGRAM SECTION === */
+.why-section {
+    text-align: center;
+    padding: 60px 60px;
+    background-color: #000;
+}
+
+.why-header h2 {
+    font-size: 2.8rem;
+    margin-bottom: 10px;
+}
+
+.why-header h3 {
+    font-size: 2rem;
+    font-weight: 400;
+    color: #bdbdbd;
+    margin-bottom: 50px;
+}
+
+/* === Карточки преимуществ === */
+.why-cards {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 60px;
+    flex-wrap: wrap;
+}
+
+.card {
+    width: 300px;
+    text-align: center;
+}
+
+.card img {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 25px;
+}
+
+.card h4 {
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+}
+
+.card p {
+    color: #ccc;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+/* === Окно регистрации === */
+.registration-window {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 1000;
+    justify-content: center;
+    align-items: center;
+}
+
+.registration-content {
+    background: #1a1a1a;
+    border-radius: 20px;
+    width: 400px;
+    max-width: 90%;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+}
+
+.registration-header {
+    background: #2a2a2a;
+    padding: 25px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #333;
+}
+
+.registration-header h2 {
+    margin: 0;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.close-registration {
+    color: #aaa;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.close-registration:hover {
+    color: white;
+}
+
+.registration-body {
+    padding: 30px;
+}
+
+.input-group {
+    margin-bottom: 25px;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 500;
+    color: #ccc;
+}
+
+.phone-input-container {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.country-code {
+    background: #333;
+    color: white;
+    border: 1px solid #555;
+    border-radius: 10px;
+    padding: 12px 15px;
+    width: 120px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.phone-input, .code-input {
+    background: #333;
+    color: white;
+    border: 1px solid #555;
+    border-radius: 10px;
+    padding: 12px 15px;
+    font-size: 16px;
+    flex: 1;
+    transition: border-color 0.3s;
+}
+
+.phone-input:focus, .code-input:focus {
+    outline: none;
+    border-color: #0088cc;
+}
+
+.code-hint {
+    font-size: 12px;
+    color: #888;
+    margin-top: 5px;
+}
+
+.submit-btn {
+    background: #0088cc;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 15px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    width: 100%;
+    transition: background 0.3s;
+    margin-top: 10px;
+}
+
+.submit-btn:hover {
+    background: #0077b3;
+}
+
+.submit-btn:active {
+    transform: translateY(1px);
+}

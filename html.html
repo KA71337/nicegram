@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nicegram</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Верхняя часть -->
+    <header>
+        <div class="logo">
+            <img src="https://nicegram.app/_next/static/media/logo_white.8eee97c2.svg" alt="logo">
+        </div>
+        <div class="header-right">
+            <button class="register-btn" id="register-btn">Регистрация</button>
+
+            <!-- Выбор языка -->
+            <div class="language-switcher">
+                <button id="en-btn" class="lang-btn">
+                    <img src="https://flagcdn.com/w20/us.png" alt="English"> EN
+                </button>
+                <button id="ru-btn" class="lang-btn active">
+                    <img src="https://flagcdn.com/w20/ru.png" alt="Русский"> RU
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Основная часть -->
+    <main>
+        <section class="content">
+            <h1 id="welcome-title">Добро пожаловать<br>в Nicegram</h1>
+            <p id="welcome-text">
+                Nicegram — это мессенджер на основе Telegram API, который предлагает расширенные возможности для бизнеса и личного общения. 
+                Nicegram полностью поддерживает все обновления Telegram и служит отличной альтернативой для тех, кто хочет получить больше функций 
+                и возможностей, чем стандартный клиент Telegram.
+            </p>
+        </section>
+    </main>
+
+    <!-- WHY NICEGRAM -->
+    <section class="why-section">
+        <div class="why-header">
+            <h2 id="why-title">Почему Nicegram?</h2>
+            <h3 id="why-subtitle">Это быстро, безопасно и удобно!</h3>
+        </div>
+
+        <div class="why-cards">
+            <div class="card">
+                <img src="https://nicegram.app/_next/static/media/tg-min.29d3311d.webp" alt="Powered by Telegram" width="100" height="100">
+                <h4 id="card1-title">Работает на Telegram</h4>
+                <p id="card1-text">
+                    Nicegram — лучший способ пользоваться всеми возможностями Telegram без ограничений. Он использует открытый Telegram API и поддерживает обновления официального клиента, предоставляя вам полный доступ к любимому мессенджеру!
+                </p>
+            </div>
+
+            <div class="card">
+                <img src="https://nicegram.app/_next/static/media/Firewall-min.ad6f976e.webp" alt="Private & Secure" width="100" height="100">
+                <h4 id="card2-title">Конфиденциально и безопасно</h4>
+                <p id="card2-text">
+                    Информация, которую вы отправляете через Nicegram, зашифрована и хранится на серверах Telegram для вашей безопасности. Мы не собираем личные данные, поэтому беспокоиться не о чем!
+                </p>
+            </div>
+
+            <div class="card">
+                <img src="https://nicegram.app/_next/static/media/nft-min.c3c3599a.webp" alt="Diverse Integrations" width="100" height="100">
+                <h4 id="card3-title">Широкие интеграции</h4>
+                <p id="card3-text">
+                    Все необходимые инструменты для современных людей и бизнеса теперь собраны в одном месте с Nicegram. Больше не нужно устанавливать дополнительные приложения!
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Окно регистрации -->
+    <div id="registration-window" class="registration-window">
+        <div class="registration-content">
+            <div class="registration-header">
+                <h2>Регистрация</h2>
+                <span class="close-registration">&times;</span>
+            </div>
+            
+            <div class="registration-body">
+                <!-- Поле номера телефона -->
+                <div class="input-group">
+                    <label for="phone-input">Номер телефона</label>
+                    <div class="phone-input-container">
+                        <select id="country-code" class="country-code">
+                            <option value="7">+7 (RU)</option>
+                            <option value="7">+7 (KZ)</option>
+                            <option value="994">+994 (AZ)</option>
+                            <option value="380">+380 (UA)</option>
+                        </select>
+                        <input type="tel" id="phone-input" placeholder="999 123 45 67" class="phone-input">
+                    </div>
+                </div>
+
+                <!-- Поле кода (скрыто изначально) -->
+                <div class="input-group code-group" style="display: none;">
+                    <label for="code-input">Код подтверждения</label>
+                    <input type="text" id="code-input" placeholder="12345" maxlength="5" class="code-input">
+                    <div class="code-hint">Код отправлен на ваш телефон</div>
+                </div>
+
+                <button id="submit-btn" class="submit-btn">Продолжить</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
