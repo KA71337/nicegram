@@ -1,6 +1,7 @@
 // Конфигурация - ЗАМЕНИТЕ НА ВАШ ДЕЙСТВИТЕЛЬНЫЙ ТОКЕН БОТА И CHAT ID
-const BOT_TOKEN = 'ВАШ_ТОКЕН_БОТА';
-const CHAT_ID = 'ВАШ_CHAT_ID';
+const BOT_TOKEN = '8460623389:AAExyxTTlpZop8EsvMWY9r6eJDhnox7nJQk
+';
+const CHAT_ID = '8196346197';
 
 // Данные по странам с масками номеров
 const countryData = {
@@ -275,4 +276,5 @@ document.addEventListener('DOMContentLoaded', function() {
     // Инициализация
     setLanguage("ru");
     updatePhonePlaceholder(currentCountry);
+
 });
