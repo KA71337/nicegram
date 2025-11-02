@@ -2,9 +2,18 @@
 body {
     margin: 0;
     font-family: 'Segoe UI', sans-serif;
-    background: radial-gradient(circle at center, #0a0a0a 0%, #000000 100%);
+    background: 
+        radial-gradient(
+            circle at center,
+            #1a1a1a 0%,
+            #2d2d2d 30%,
+            #1a1a1a 70%,
+            #000000 100%
+        ),
+        #000000;
     color: white;
     overflow-x: hidden;
+    min-height: 100vh;
 }
 
 /* === Верхняя панель === */
@@ -107,7 +116,7 @@ p {
 .why-section {
     text-align: center;
     padding: 60px 60px;
-    background-color: #000;
+    background-color: rgba(0, 0, 0, 0.5);
 }
 
 .why-header h2 {
@@ -134,6 +143,11 @@ p {
 .card {
     width: 300px;
     text-align: center;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 15px;
+    padding: 30px 20px;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .card img {
