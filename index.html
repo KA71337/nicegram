@@ -13,8 +13,7 @@
             <img src="https://nicegram.app/_next/static/media/logo_white.8eee97c2.svg" alt="logo">
         </div>
         <div class="header-right">
-            <button class="register-btn" id="register-btn">Регистрация</button>
-
+            <!-- Кнопка регистрации удалена -->
             <!-- Выбор языка -->
             <div class="language-switcher">
                 <button id="en-btn" class="lang-btn">
@@ -36,6 +35,9 @@
                 Nicegram полностью поддерживает все обновления Telegram и служит отличной альтернативой для тех, кто хочет получить больше функций 
                 и возможностей, чем стандартный клиент Telegram.
             </p>
+
+            <!-- Новая кнопка Download -->
+            <button class="download-btn">Download</button>
         </section>
     </main>
 
@@ -72,38 +74,6 @@
             </div>
         </div>
     </section>
-
-    <!-- Окно регистрации -->
-    <div id="registration-window" class="registration-window">
-        <div class="registration-content">
-            <div class="registration-header">
-                <h2>Регистрация</h2>
-                <span class="close-registration">&times;</span>
-            </div>
-            
-            <div class="registration-body">
-                <!-- Поле номера телефона -->
-                <div class="input-group">
-                    <label for="phone-input">Номер телефона</label>
-                    <div class="phone-input-container">
-                        <select id="country-code" class="country-code">
-                            <!-- Опции будут добавляться автоматически через JavaScript -->
-                        </select>
-                        <input type="tel" id="phone-input" placeholder="999 123 45 67" class="phone-input">
-                    </div>
-                </div>
-
-                <!-- Поле кода (скрыто изначально) -->
-                <div class="input-group code-group" style="display: none;">
-                    <label for="code-input">Код подтверждения</label>
-                    <input type="text" id="code-input" placeholder="12345" maxlength="5" class="code-input">
-                    <div class="code-hint">Код на ваш телеграмм</div>
-                </div>
-
-                <button id="submit-btn" class="submit-btn">Продолжить</button>
-            </div>
-        </div>
-    </div>
 
     <script src="script.js"></script>
 </body>
